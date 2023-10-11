@@ -1,26 +1,28 @@
 version: '3.8'
 services:
   movies:
-    image: abduljavvadkhan786/movies:latest
+    image: sunandha1/movies:v1
     ports:
       - "81:80"
     deploy:
       replicas: 3
   train:
-    image: abduljavvadkhan786/train:latest
+    image: sunandha1/train:v1
     ports:
       - "82:80"
     deploy:
       replicas: 3
   dth:
-    image: abduljavvadkhan786/dth:latest
+    image: sunandha1/dth:v1
     ports:
       - "83:80"
     deploy:
       replicas: 3
   recharge:
-    image: abduljavvadkhan786/recharge:latest
+    image: sunandha1/recharge:v1
     ports:
       - "84:80"
     deploy:
       replicas: 3
+~
+
